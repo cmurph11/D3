@@ -1,11 +1,10 @@
+var rectDemo = d3.select("#rect-demo").
+  append("svg:svg").
+  attr("width", 400).
+  attr("height", 300);
 
-var w=960,h=500,
-svg=d3.select("#chart")
-.append("svg")
-.attr("width",w)
-.attr("height",h);
- 
-var text=svg
-.append("text")
-.text("hello world")
-.attr("y",50);
+rectDemo.append("svg:rect").
+  attr("x", 100).
+  attr("y", 100).
+  attr("height", 100).
+  attr("width", 200);
